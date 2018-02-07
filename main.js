@@ -22,14 +22,15 @@ function renderCoffees(coffees) {
 
 
 
-function updateCoffees(e) {
-    e.preventDefault(); // don't submit the form, we just want to update the data
-
+function updateCoffees() {
+    // e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
         if (coffee.roast === selectedRoast) {
             filteredCoffees.push(coffee);
+        } else if (selectedRoast === 'All') {
+            filteredCoffees = coffees;
         }
         else if (coffee.roast != selectedRoast) {
             coffeeDisplay.innerHTML = renderCoffees(coffees);
@@ -38,6 +39,8 @@ function updateCoffees(e) {
     });
 
     coffeeDisplay.innerHTML = renderCoffees(filteredCoffees);
+    console.log(filteredCoffees);
+    return filteredCoffees;
 }
 
 var coffeeDisplay = document.querySelector('#coffee-render-location');
@@ -66,25 +69,34 @@ var coffees = [
 ];
 
 
+<<<<<<< HEAD
 
+=======
+var coffeeDisplay = document.querySelector('#coffee-render-location');
+var roastSelection = document.querySelector('#roast-selection');
+>>>>>>> 3f50a362289591a260df278bcc2638b9d7eb0e75
 
 
 
 coffeeDisplay.innerHTML = renderCoffees(coffees);
 
+<<<<<<< HEAD
 roastSelection.addEventListener('change', updateCoffees);
+=======
+>>>>>>> 3f50a362289591a260df278bcc2638b9d7eb0e75
 
 
 
 //Uses user input to search for coffee by coffee.name in real time.
 var searchField = document.getElementById("search-input");
 
+roastSelection.addEventListener('change', updateCoffees);
 
 
 searchField.addEventListener('keyup', function () {
     var searchInput = document.getElementById('search-input').value.toLowerCase();
     var filteredResults = [];
-    coffees.forEach(function(coffee){
+    updateCoffees().forEach(function(coffee){
         var lowerCaseCoffeeName = coffee.name.toLowerCase();
         if (lowerCaseCoffeeName.includes(searchInput)){
             filteredResults.push(coffee);
@@ -92,6 +104,8 @@ searchField.addEventListener('keyup', function () {
         }
     });
 });
+
+
 
 
 
