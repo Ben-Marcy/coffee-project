@@ -2,18 +2,13 @@
 /*font-family: 'Cabin Condensed', sans-serif;*/
 /*font-family: 'IM Fell French Canon SC', serif;*/
 
-/*!*GLOBAL STYLES*!*/
-/** {*/
-    /*box-sizing: border-box;*/
-/*}*/
-
-
 
 /*!*TOP OF SCREEN*!*/
 h1 {
     color: #d3d3d3;
     font-family: 'IM Fell French Canon SC', serif;
     font-size: 3.5em;
+    margin-bottom: 30px;
 }
 
 body {
@@ -39,23 +34,6 @@ body {
 }
 
 
-/*#coffee-render-location {*/
-    /*width: 50%;*/
-/*}*/
-
-/*.coffee {*/
-    /*width: 50%;*/
-    /*float: left;*/
-    /*margin: 1em auto;*/
-/*}*/
-
-/*.coffee h2, .coffee p {*/
-    /*display: inline;*/
-/*}*/
-
-/*p {*/
-    /*padding-left: 1em;*/
-/*}*/
 
 /*!*RIGHT SIDE OF SCREEN*!*/
 
@@ -64,53 +42,52 @@ body {
     font-family: 'IM Fell French Canon SC', serif;
 }
 
+#roast-selection {
+    height: 2em;
+    font-family: 'IM Fell French Canon SC', serif;
+    font-size: 1.8em;
+    text-align: center;
+}
 
-/*.input-section {*/
-    /*width: 50%;*/
-    /*float: right;*/
-/*}*/
+#search-input {
+    margin-top: 10px;
+    opacity: .7;
+    color: black;
+    height: 2em;
+    font-size: 1.8em;
+    font-family: 'IM Fell French Canon SC', serif;
+}
 
-/*.sub-sec-1, .sub-sec-2 {*/
-    /*margin: 1.2em auto;*/
-    /*width: 80%;*/
-/*}*/
+#search-input:focus{
+    opacity: 1;
+    outline: none;
+}
 
-/*.sub-sec-1 {*/
-    /*margin-bottom: 5em;*/
-/*}*/
+#add-coffee {
+    height: 2em;
+    font-size: 1.8em;
+    font-family: 'IM Fell French Canon SC', serif;
+    opacity: .7;
+}
 
-/*select, input {*/
-    /*width: 100%;*/
-    /*height: 3em;*/
-    /*font-size: 1em;*/
-/*}*/
+#add-coffee:focus{
+    opacity: 1;
+    outline: none;
+}
 
+#roast-type {
+    margin-top: 10px;
+    height: 2em;
+    font-size: 1.8em;
+    font-family: "IM Fell French Canon SC", serif;
+}
 
-
-/*#search-input {*/
-    /*margin-top: 2em;*/
-/*}*/
-
-/*.input-header {*/
-    /*text-align: center;*/
-    /*color: whitesmoke;*/
-    /*font-size: 1.7em;*/
-    /*margin-top: .3em;*/
-/*}*/
-
-/*!*BOTTOM RIGHT SECTION*!*/
-
-/*#add-coffee {*/
-    /*margin-bottom: 2em;*/
-/*}*/
-
-/*#coffee-btn {*/
-    /*height: 4em;*/
-    /*width: 99.89%;*/
-    /*background-color: lightsteelblue;*/
-    /*font-size: 1em;*/
-/*}*/
-
-/*.sub-sec-2 {*/
-    /*text-align: center;*/
-/*}*/
+#coffee-btn {
+    margin-top: 10px;
+    height: 2em;
+    font-size: 1.8em;
+    font-family: 'IM Fell French Canon SC', serif;
+    background-image: url("img/coffee_btn_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
