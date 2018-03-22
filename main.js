@@ -20,8 +20,6 @@ function renderCoffees(coffees) {
     return html;
 }
 
-
-
 function updateCoffees() {
     // e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
@@ -37,8 +35,6 @@ function updateCoffees() {
     coffeeDisplay.innerHTML = renderCoffees(filteredCoffees);
     return filteredCoffees;
 }
-
-
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
@@ -58,20 +54,13 @@ var coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
-
 var coffeeDisplay = document.querySelector('#coffee-render-location');
 var roastSelection = document.querySelector('#roast-selection');
 
-
-
 coffeeDisplay.innerHTML = renderCoffees(coffees);
-
-
-
 
 //Uses user input to search for coffee by coffee.name in real time.
 var searchField = document.getElementById("search-input");
-
 roastSelection.addEventListener('change', updateCoffees);
 
 
@@ -100,7 +89,6 @@ function addCoffee() {
         };
         coffees.push(newCoffeeType);
         updateCoffees();
-
     }
 }
 document.getElementById("coffee-btn").addEventListener("click", addCoffee);

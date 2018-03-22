@@ -14,14 +14,11 @@ h1 {
 body {
     width: 95%;
     margin: 0 auto;
-    background: linear-gradient(rgba(141,153,174, .3), rgba(141,153,174, .3)), url("img/coffee_beans.jpg") no-repeat;
+    background: linear-gradient(rgba(141,153,174, .3), rgba(141,153,174, .3)), url("img/coffee_beans.jpg") no-repeat fixed center;
     background-size: cover;
-
 }
 
-
 /*LEFT SIDE OF SCREEN*/
-
 .roast-type {
     color: lightskyblue;
     font-size: 1.2em;
